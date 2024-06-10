@@ -46,7 +46,7 @@ export default function TodoItem({ isDone }) {
                   deletTodolist(item.id);
                 }}
               >
-                삭제
+                삭제 
               </button>
             </section>
           </li>
