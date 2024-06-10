@@ -1,11 +1,12 @@
 import TodoItem from "./TodoItem";
 
 export default function TodoList({ isDone }) {
+  console.log(isDone)
   return (
     <section>
-      <h2>Working...</h2>
+      <h2>{!isDone? 'Working...':"Done list"}</h2>
       <ul>
-        <TodoItem />
+        <TodoItem isDone={isDone}/>
       </ul>
     </section>
   );
